@@ -10,24 +10,16 @@ ul
     list-style-type: none;
 }
 
-#logobutton {
-    background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;
-}
-
-.MainLogo {
+#MainLogo {
   height: auto;
   width: 200px;
   padding-top: 25px;
   padding-left: 25px;
 }
 
-.smallmenu {
-  width: 50px;
+#miniBar {
+  background-opacity: 0.6;
+  width: 3em;
   background: gray;
   border-bottom-right-radius: 5%;
   border-top-right-radius: 5%;
@@ -35,6 +27,39 @@ ul
   padding-bottom: 20px;
 }
 
+#musicIcon:hover {
+  color : #E8E4E1;
+  font-size: 30px;
+}
+
+#mediaIcon:hover {
+  color : #E8E4E1;
+  font-size: 30px;
+}
+
+#liveIcon:hover {
+  color : #E8E4E1;
+  font-size: 30px;
+}
+
 .list {
   margin-left: -25px;
+}
+
+#musicBar {
+  color : #E8E4E1;
+  font-size: 1px;
+  opacity: 0;
+}
+
+#mediaBar {
+  color : #E8E4E1;
+  font-size: 1px;
+  opacity: 0;
+}
+
+#liveBar {
+  color : #E8E4E1;
+  font-size: 1px;
+  opacity: 0;
 }

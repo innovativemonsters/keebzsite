@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="eng" ng-app>
+<html lang="eng" ng-app="keebzSite">
 <head>
   <meta charset="UTF-8">
   <title>Keebz</title>
@@ -14,22 +14,25 @@
 
   <body>
     <div class="row">
-      <img src="img/KeebzWebLogo.png" class="MainLogo" ng-click="SideBar = true" ng-click="MiniBar = false">
+      <img src="img/KeebzWebLogo.png" id="MainLogo">
     </div>
     <br>
-    <div class='smallmenu'>
+    <div id='miniBar'>
         <ul class="list">
-          <li><span class="glyphicon glyphicon-music" ng-click="SideBar = true">    </li>
-          <li><span class="glyphicon glyphicon-camera" ng-click="SideBar = true">   </li>
-          <li><span class="glyphicon glyphicon-bullhorn" ng-click="SideBar = true"> </li>
+            <li>
+              <a href="views/music">
+                <span id="musicIcon" class="glyphicon glyphicon-music"   ></span>
+                <span id="musicBar"> Music</span></li>
+              </a>
+
+            <li>
+              <span id="mediaIcon" class="glyphicon glyphicon-camera"  ></span>
+              <span id="mediaBar"> Media</span></li>
+
+            <li>
+              <span id="liveIcon"  class="glyphicon glyphicon-bullhorn"></span>
+              <span id="liveBar" > Live </span></li>
         </ul>
-    </div>
-    <div ng-show='SideBar'>
-      <ul>
-        <li><span ng-click="SideBar = false" >Music</span></li>
-        <li><span ng-click="SideBar = false" >Media</span></li>
-        <li><span ng-click="SideBar = false" >Live</span></li>
-      </ul>
-    </div>
+
   </body>
 </html>
