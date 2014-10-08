@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="eng" ng-app>
+<head>
+  <meta charset="UTF-8">
+  <title>Keebz</title>
+  <script src="lib/angular.js"></script>
+  <script src="app.js"></script>
+  <script src="js/jquery-1.11.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+  <body>
+    <div class="row">
+      <img src="img/KeebzWebLogo.png" class="MainLogo" ng-click="SideBar = true" ng-click="MiniBar = false">
+    </div>
+    <br>
+    <div class='smallmenu'>
+        <ul class="list">
+          <li><span class="glyphicon glyphicon-music" ng-click="SideBar = true">    </li>
+          <li><span class="glyphicon glyphicon-camera" ng-click="SideBar = true">   </li>
+          <li><span class="glyphicon glyphicon-bullhorn" ng-click="SideBar = true"> </li>
+        </ul>
+    </div>
+    <div ng-show='SideBar'>
+      <ul>
+        <li><span ng-click="SideBar = false" >Music</span></li>
+        <li><span ng-click="SideBar = false" >Media</span></li>
+        <li><span ng-click="SideBar = false" >Live</span></li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+body {
+  background-color: black;
+  background-image: url("../img/recordplayer.jpg");
+  background-repeat: no-repeat;
+  background-size:100%;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+#logobutton {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.MainLogo {
+  height: auto;
+  width: 200px;
+  padding-top: 25px;
+  padding-left: 25px;
+}
+
+.smallmenu {
+  width: 50px;
+  background: gray;
+  border-bottom-right-radius: 5%;
+  border-top-right-radius: 5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.list {
+  margin-left: -25px;
+}
