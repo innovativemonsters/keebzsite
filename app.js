@@ -1,9 +1,2 @@
-var keebzSite = angular.module('keebzSite', ['ngRoute']);
+var keebzSite = angular.module('keebzSite', []);
 
-keebzSite.config(function ($routeProvider) {
-   $routeProvider
-      .when('/',
-        {
-      templateUrl: 'views/music.html'
-        })
- });
