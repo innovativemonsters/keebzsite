@@ -1,8 +1,10 @@
 $(document).ready(function(){
-  $('#MainLogo').hide();
   $('#musicLayout').hide();
   $('#mediaLayout').hide();
   $('#liveLayout').hide();
+  $('#MainLogo').hide();
+  $('#facebook').hide();
+  $('#facebookTab').css('background','rgba(255, 255, 255, .5)');
 
 
   $('#MainLogo').click(function() {
@@ -14,12 +16,12 @@ $(document).ready(function(){
           $('#musicLayout').removeClass("col-md-11");
           $('#mediaLayout').removeClass("col-md-11");
           $('#liveLayout').removeClass("col-md-11");
-      $(this).animate({"width": "16em"}, 100, function(){
-          $('#keebzIcon').hide();
-          $('#MainLogo').show();
           $('#musicLayout').addClass("col-md-9");
           $('#mediaLayout').addClass("col-md-9");
           $('#liveLayout').addClass("col-md-9");
+      $(this).animate({"width": "16em"}, 100, function(){
+          $('#keebzIcon').hide();
+          $('#MainLogo').show();
 
         });
       })
@@ -91,5 +93,19 @@ $(document).ready(function(){
       $(this).css("bottom","-1000px")
       $(this).animate({ "bottom": "+=1000px" }, 500 );
     });
+  });
+
+  $('#facebookTab').click(function(){
+    $('#twitterTab').css('background','rgba(255, 255, 255, .5)');
+    $(this).css('background','rgba(255, 255, 255, .8)');
+    $('#twitter').hide();
+    $('#facebook').show();
+  });
+
+  $('#twitterTab').click(function(){
+    $('#facebookTab').css('background','rgba(255, 255, 255, .5)');
+    $(this).css('background','rgba(255, 255, 255, .8)');
+    $('#facebook').hide();
+    $('#twitter').show();
   });
 });
