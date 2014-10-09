@@ -13,30 +13,31 @@
 </head>
 
   <body>
-    <div class="row">
-    <div >
-      <img src="img/KeebzWebLogo.png" id="MainLogo">
-      <div id='miniBar'>
+      <div id='miniBar' class="col-md-1">
+          <img src="img/KEEBZwebLogo.png" id="MainLogo">
           <ul class="list">
               <li>
+                <img id="keebzIcon" src="img/KeebzGlyph.png"/>
+              </li>
+
+              <li>
                   <span id="musicIcon" class="glyphicon glyphicon-music"   ></span>
-                  <span id="musicBar"> Music</span></li>
+                  <span class="barText" id="musicBar"> music</span></li>
 
               <li>
                 <span id="mediaIcon" class="glyphicon glyphicon-camera"  ></span>
-                <span id="mediaBar"> Media</span></li>
+                <span class="barText" id="mediaBar"> media</span></li>
 
               <li>
                 <span id="liveIcon"  class="glyphicon glyphicon-bullhorn"></span>
-                <span id="liveBar" > Live </span></li>
+                <span class="barText" id="liveBar" > live</span></li>
           </ul>
 
       </div>
-    </div>
-    </div>
-    <div id="musicLayout" class="container col-md-12">
+
+    <div id="musicLayout">
       <div class="col-md-4">
-        <h1>Original</h1>
+        <h1>original</h1>
         <div class="scrol" style='height:650px; overflow:auto;'>
           <span class="scrolText">
             <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/8398384&amp;color=aeaeae&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
@@ -45,18 +46,18 @@
       </div>
 
       <div class="col-md-4">
-        <h1>Colaborations</h1>
+        <h1>colaborations</h1>
         <div class="scrol" style='height:650px; overflow:auto;'>
           <span class="scrolText">
-            <iframe width="500" height="281" src="http://www.youtube.com/embed/gi7kFQuyZ9s" frameborder="0" allowfullscreen></iframe>
-            <iframe width="500" height="281" src="http://www.youtube.com/embed/ylJT-4Fpl7M" frameborder="0" allowfullscreen></iframe>
-            <iframe width="500" height="281" src="http://www.youtube.com/embed/Qqi_DVcSMPY" frameborder="0" allowfullscreen></iframe>
+            <iframe width="100%" height="281" src="http://www.youtube.com/embed/gi7kFQuyZ9s" frameborder="0" allowfullscreen></iframe>
+            <iframe width="100%" height="281" src="http://www.youtube.com/embed/ylJT-4Fpl7M" frameborder="0" allowfullscreen></iframe>
+            <iframe width="100%" height="281" src="http://www.youtube.com/embed/Qqi_DVcSMPY" frameborder="0" allowfullscreen></iframe>
           </span>
         </div>
       </div>
 
       <div class="col-md-4">
-        <h1>Mix Sets</h1>
+        <h1>mix sets</h1>
         <div class="scrol" style='height:650px; overflow:auto;'>
           <span class="scrolText">
             <iframe width="100%" height="180" src="http://www.mixcloud.com/widget/iframe/?feed=http%3A%2F%2Fwww.mixcloud.com%2Fkeebz%2F30-minute-quick-mix%2F&amp;embed_uuid=d25f8791-c5c2-4cac-9136-72ba7cdf26ae&amp;replace=0&amp;hide_cover=1&amp;embed_type=widget_standard&amp;hide_tracklist=1" frameborder="0"></iframe><div style="clear: both; height: 3px; width: auto;"></div><p style="display: block; font-size: 11px; font-family: 'Open Sans', Helvetica, Arial, sans-serif; margin: 0px; padding: 3px 4px; color: rgb(153, 153, 153); width: auto;"><a href="http://www.mixcloud.com/keebz/30-minute-quick-mix/?utm_source=widget&amp;amp;utm_medium=web&amp;amp;utm_campaign=base_links&amp;amp;utm_term=resource_link" target="_blank" style="color:#808080; font-weight:bold;">30 Minute Quick Mix</a><span> by </span><a href="http://www.mixcloud.com/keebz/?utm_source=widget&amp;amp;utm_medium=web&amp;amp;utm_campaign=base_links&amp;amp;utm_term=profile_link" target="_blank" style="color:#808080; font-weight:bold;">Lee Djkeebz Kebler</a><span> on </span><a href="http://www.mixcloud.com/?utm_source=widget&amp;utm_medium=web&amp;utm_campaign=base_links&amp;utm_term=homepage_link" target="_blank" style="color:#808080; font-weight:bold;"> Mixcloud</a></p><div style="clear: both; height: 3px; width: auto;"></div>
@@ -67,7 +68,7 @@
       </div>
     </div>
 
-    <div id="mediaLayout" class="container col-md-12">
+    <div id="mediaLayout">
       <div class="col-md-4">
         <h1>Press</h1>
         <div class="scrol" style='height:650px; overflow:auto;'>
@@ -89,7 +90,7 @@
         <h1>Video</h1>
         <div class="scrol" style='height:650px; overflow:auto;'>
           <span class="scrolText">
-            <iframe src="http://player.vimeo.com/video/48563757" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe src="http://player.vimeo.com/video/48563757" width="100%" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </span>
         </div>
       </div>
@@ -98,13 +99,13 @@
         <h1>Photo</h1>
         <div class="scrol" style='height:650px; overflow:auto;'>
           <span class="scrolText">
-            <iframe src="http://www.flickr.com/photos/djkeebz/8101409799/player/" width="500" height="375" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+            <iframe src="http://www.flickr.com/photos/djkeebz/8101409799/player/" width="100%" height="375" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
           </span>
         </div>
       </div>
     </div>
 
-    <div id="liveLayout" class="container col-md-12">
+    <div id="liveLayout">
       <div class="col-md-4">
         <h1>Show Dates</h1>
         <div class="scrol" style='height:650px; overflow:auto;'>
@@ -123,7 +124,7 @@
       </div>
 
       <div class="col-md-4">
-        <h1>Booking & Contact</h1>
+        <h1>Booking</h1>
         <div class="scrol" style='height:650px; overflow:auto;'>
           <span class="scrolText">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec orci nulla, vulputate non luctus sit amet, sollicitudin non mi. Mauris sed mollis arcu, id eleifend velit. In a egestas lectus. Sed erat orci, bibendum in orci in, porta tristique ante. Morbi a lectus nisi. Quisque elementum vulputate felis, et congue felis auctor nec. Nulla ut velit non velit blandit efficitur et at purus. Nullam ut molestie lectus. Cras eu diam congue, dignissim risus sit amet, auctor felis.
