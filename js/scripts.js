@@ -1,5 +1,8 @@
 $(document).ready(function(){
-  $('#musicLayout').hide();
+
+  $('#MainLogo').click(function() {
+    location.reload();
+});
 
   $("#miniBar")
     .mouseenter(function() {
@@ -23,7 +26,7 @@ $(document).ready(function(){
     $('#mediaLayout').animate({ "bottom": "-1000px" }, 300, function(){$(this).hide();});
     $('#musicLayout').show(function(){
       $(this).css("bottom","-1000px")
-      $(this).animate({ "bottom": "+=1000px" }, 300 );
+      $(this).animate({ "bottom": "+=1000px" }, 500 );
     });
   });
 
@@ -42,7 +45,7 @@ $(document).ready(function(){
     $('#musicLayout').animate({ "bottom": "-1000px" }, 300, function(){$(this).hide();});
     $('#mediaLayout').show(function(){
       $(this).css("bottom","-1000px")
-      $(this).animate({ "bottom": "+=1000px" }, 300 );
+      $(this).animate({ "bottom": "+=1000px" }, 500 );
     });
   });
 
@@ -61,7 +64,7 @@ $(document).ready(function(){
     $('#musicLayout').animate({ "bottom": "-1000px" }, 300, function(){$(this).hide();});
     $('#liveLayout').show(function(){
       $(this).css("bottom","-1000px")
-      $(this).animate({ "bottom": "+=1000px" }, 300 );
+      $(this).animate({ "bottom": "+=1000px" }, 500 );
     });
   });
 });
