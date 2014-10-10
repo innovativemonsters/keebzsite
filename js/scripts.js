@@ -17,17 +17,16 @@ $(document).ready(function(){
     $("#miniBar")
       .show('slide')
       .mouseenter(function() {
-            $('#musicLayout, #mediaLayout, #liveLayout').removeClass("col-md-11");
-            $('#musicLayout, #mediaLayout, #liveLayout').addClass("col-md-9");
+        $('#musicLayout, #mediaLayout, #liveLayout').removeClass("col-md-11");
+        $('#musicLayout, #mediaLayout, #liveLayout').addClass("col-md-9");
         $(this).animate({"width": "16em"}, 100, function(){
             $('#keebzIcon').hide();
             $('#MainLogo').show();
-
           });
         })
       .mouseleave(function() {
-            $('#MainLogo').hide();
-            $('#keebzIcon').show();
+        $('#MainLogo').hide();
+        $('#keebzIcon').show();
         $(this).animate({"width": "5em"}, 100, function(){
             $('#musicLayout, #mediaLayout, #liveLayout').removeClass("col-md-9");
             $('#musicLayout, #mediaLayout, #liveLayout').addClass("col-md-11");
@@ -95,9 +94,5 @@ $(document).ready(function(){
       $('#facebook').hide();
       $('#twitter').show();
     });
-
-    document.getElementById("musicLayout").ready = function() {
-    alert("myframe is loaded");
-    };
   });
 });
