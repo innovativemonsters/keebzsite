@@ -14,16 +14,15 @@ ul
 }
 
 h1 {
-  color: white;
   font-weight: bold;
   margin-top: -10px;
   text-align: center;
-  text-shadow:
+/*  text-shadow:
        2px 2px 0 #000,
      -1px -1px 0 #000,
       1px -1px 0 #000,
       -1px 1px 0 #000,
-       1px 1px 0 #000;
+       1px 1px 0 #000;*/
 }
 
 .row-no-padding {
@@ -47,7 +46,7 @@ h1 {
 
 #miniBar {
   width: 5em;
-  background: rgba(100, 100, 100, 0.5);
+  background: rgba(100, 100, 100, 0.3);
   border-bottom-right-radius: 5%;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -100,20 +99,11 @@ h1 {
   opacity: 0;
 }
 
-#musicLayout {
+#musicLayout, #mediaLayout, #liveLayout{
   padding-top:2%;
   bottom: -1000px;
 }
 
-#mediaLayout {
-  padding-top:2%;
-  bottom: -1000px;
-}
-
-#liveLayout {
-  padding-top:2%;
-  bottom: -1000px;
-}
 .scrol1 {
   background: rgba(245, 171, 61, 0.4);
   border-top-left-radius: 2%;
@@ -123,13 +113,11 @@ h1 {
 
 .scrol2 {
   background: rgba(139, 36, 243, 0.4);
-/*  border-radius: 2%;*/
   padding: 10px;
 }
 
 .scrol3 {
   background: rgba(169, 246, 254, 0.4);
-  /*background: rgba(102, 152, 243, 0.5);*/
   border-top-right-radius: 2%;
   border-bottom-right-radius: 2%;
   padding: 10px;

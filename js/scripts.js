@@ -1,10 +1,14 @@
 $(document).ready(function(){
   $('#MainLogo, #musicLayout, #mediaLayout, #liveLayout, #facebook').hide();
   $('#facebookTab').css('background','rgba(255, 255, 255, .5)');
+
   $('#MainLogo').click(function() {
-    location.reload();
+  $('#musicLayout, #mediaLayout, #liveLayout, #facebook').hide();
+  $('#musicLayout, #mediaLayout, #liveLayout').css("bottom","-1000px").removeClass("col-md-11").addClass("col-md-9");
+  $('#facebookTab').css('background','rgba(255, 255, 255, .5)');
 });
 
+//sidebar Function
   $("#miniBar")
     .mouseenter(function() {
           $('#musicLayout, #mediaLayout, #liveLayout').removeClass("col-md-11");
