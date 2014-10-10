@@ -37,49 +37,41 @@ $(document).ready(function(){
   $('#musicIcon').click(function(){
     $('#liveLayout, #mediaLayout').animate({ "bottom": "-1000px" }, 300, function(){$(this).hide();});
     $('#musicLayout').show(function(){
-      $(this).css("bottom","-1000px")
-      $(this).animate({ "bottom": "+=1000px" }, 500 );
+      $(this).css("bottom","-1000px").animate({ "bottom": "+=1000px" }, 500 );
     });
   });
 
 //media Icon Function
   $('#mediaIcon')
     .mouseenter(function() {
-      $('#mediaBar').css("font-size","40px");
-      $('#mediaBar').animate({"opacity": "1" }, 100);})
+      $('#mediaBar').css("font-size","40px").animate({"opacity": "1" }, 100);})
     .mouseleave(function() {
-      $("#mediaBar").animate({"opacity": "0"}, 100);
-      $('#mediaBar').css("font-size","1px");
+      $("#mediaBar").animate({"opacity": "0"}, 100).css("font-size","1px");
   });
 
   $('#mediaIcon').click(function(){
-    $('#liveLayout').animate({ "bottom": "-1000px" }, 300, function(){$(this).hide();});
-    $('#musicLayout').animate({ "bottom": "-1000px" }, 300, function(){$(this).hide();});
+    $('#liveLayout, #musicLayout').animate({ "bottom": "-1000px" }, 300, function(){$(this).hide();});
     $('#mediaLayout').show(function(){
-      $(this).css("bottom","-1000px")
-      $(this).animate({ "bottom": "+=1000px" }, 500 );
+      $(this).css("bottom","-1000px").animate({ "bottom": "+=1000px" }, 500 );
     });
   });
 
 //live Icon Function
   $('#liveIcon')
     .mouseenter(function() {
-      $('#liveBar').css("font-size","40px");
-      $('#liveBar').animate({"opacity": "1" }, 100);})
+      $('#liveBar').css("font-size","40px").animate({"opacity": "1" }, 100);})
     .mouseleave(function() {
-      $("#liveBar").animate({"opacity": "0"}, 100);
-      $('#liveBar').css("font-size","1px");
+      $("#liveBar").animate({"opacity": "0"}, 100).css("font-size","1px");
   });
 
   $('#liveIcon').click(function(){
-    $('#mediaLayout').animate({ "bottom": "-1000px" }, 300, function(){$(this).hide();});
-    $('#musicLayout').animate({ "bottom": "-1000px" }, 300, function(){$(this).hide();});
+    $('#mediaLayout, #musicLayout').animate({ "bottom": "-1000px" }, 300, function(){$(this).hide();});
     $('#liveLayout').show(function(){
-      $(this).css("bottom","-1000px")
-      $(this).animate({ "bottom": "+=1000px" }, 500 );
+      $(this).css("bottom","-1000px").animate({ "bottom": "+=1000px" }, 500 );
     });
   });
 
+//Social Tab Function
   $('#facebookTab').click(function(){
     $('#twitterTab').css('background','rgba(255, 255, 255, .5)');
     $(this).css('background','rgba(255, 255, 255, .8)');
