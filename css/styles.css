@@ -193,10 +193,11 @@ h1 {
 
 #contact {
   padding: 10%;
-  font-size: 30px
+  font-size: 20px
 }
 
 #contactLogo {
+  left: 5%;
   float: right;
   padding: 10%;
   height: auto;
