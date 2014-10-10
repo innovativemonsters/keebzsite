@@ -1,24 +1,14 @@
 $(document).ready(function(){
-  $('#musicLayout').hide();
-  $('#mediaLayout').hide();
-  $('#liveLayout').hide();
-  $('#MainLogo').hide();
-  $('#facebook').hide();
+  $('#MainLogo, #musicLayout, #mediaLayout, #liveLayout, #facebook').hide();
   $('#facebookTab').css('background','rgba(255, 255, 255, .5)');
-
-
   $('#MainLogo').click(function() {
     location.reload();
 });
 
   $("#miniBar")
     .mouseenter(function() {
-          $('#musicLayout').removeClass("col-md-11");
-          $('#mediaLayout').removeClass("col-md-11");
-          $('#liveLayout').removeClass("col-md-11");
-          $('#musicLayout').addClass("col-md-9");
-          $('#mediaLayout').addClass("col-md-9");
-          $('#liveLayout').addClass("col-md-9");
+          $('#musicLayout, #mediaLayout, #liveLayout').removeClass("col-md-11");
+          $('#musicLayout, #mediaLayout, #liveLayout').addClass("col-md-9");
       $(this).animate({"width": "16em"}, 100, function(){
           $('#keebzIcon').hide();
           $('#MainLogo').show();
@@ -29,12 +19,8 @@ $(document).ready(function(){
           $('#MainLogo').hide();
           $('#keebzIcon').show();
       $(this).animate({"width": "5em"}, 100, function(){
-          $('#musicLayout').removeClass("col-md-9");
-          $('#musicLayout').addClass("col-md-11");
-          $('#mediaLayout').removeClass("col-md-9");
-          $('#mediaLayout').addClass("col-md-11");
-          $('#liveLayout').removeClass("col-md-9");
-          $('#liveLayout').addClass("col-md-11");
+          $('#musicLayout, #mediaLayout, #liveLayout').removeClass("col-md-9");
+          $('#musicLayout, #mediaLayout, #liveLayout').addClass("col-md-11");
         });
       });
 
@@ -49,8 +35,7 @@ $(document).ready(function(){
   });
 
   $('#musicIcon').click(function(){
-    $('#liveLayout').animate({ "bottom": "-1000px" }, 300, function(){$(this).hide();});
-    $('#mediaLayout').animate({ "bottom": "-1000px" }, 300, function(){$(this).hide();});
+    $('#liveLayout, #mediaLayout').animate({ "bottom": "-1000px" }, 300, function(){$(this).hide();});
     $('#musicLayout').show(function(){
       $(this).css("bottom","-1000px")
       $(this).animate({ "bottom": "+=1000px" }, 500 );
