@@ -59,10 +59,7 @@ h5 {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 5px;
-}
-
-#miniBar:hover {
-  height: 250px;
+  height: 230px;
 }
 
 #musicIcon:hover {
@@ -113,9 +110,9 @@ h5 {
 
 .layout {
   display: inline-block;
-  width: 94%;
+  width: 96%;
   padding-left: 10px;
-  bottom: -1000px;
+  margin-top: 1000px;
   transition: width 0.1s ease;
 }
 
@@ -140,7 +137,6 @@ h5 {
 
 #tour {
   padding: 5px;
-  /*background: rgba(55, 55, 55, .3);*/
   border-radius: 1em;
 }
 
