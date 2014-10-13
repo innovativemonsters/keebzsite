@@ -14,13 +14,24 @@ $(document).ready(function(){
 
 //after content loads
   $(window).load(function(){
+    $('#loading').fadeOut( function(){
+        $("#keebzIcon").hide();
+        $('#MainLogo').css({"margin-left":"-200px","width":"200px"}).show();
+        $('.glyphicon').css({"left":"-300px"});
+        $('#miniBar').css({"width":"0em", "left":"-50px"});
+        
+        $('#miniBar').show( function(){
+          $(this).animate({"width": "16em", "left":"0px"}, 500);
+          $('.glyphicon').animate({"left":"0px"},500);
+          $('#MainLogo').animate({'margin-left':"0px"},500);
+          $('.barText').animate({"left":"100px"},500);
+        });
+    });
 //sidebar Function
-    $('#loading').fadeOut();
     $("#miniBar")
-      .show('slide')
       .mouseenter(function() {
-        $('#musicLayout, #mediaLayout, #liveLayout').removeClass("col-md-11");
-        $('#musicLayout, #mediaLayout, #liveLayout').addClass("col-md-9");
+        $('.layout').removeClass("col-md-11");
+        $('.layout').addClass("col-md-9");
         $(this).animate({"width": "16em"}, 100, function(){
             $('#keebzIcon').hide();
             $('#MainLogo').show();
@@ -30,8 +41,8 @@ $(document).ready(function(){
         $('#MainLogo').hide();
         $('#keebzIcon').show();
         $(this).animate({"width": "5em"}, 100, function(){
-            $('#musicLayout, #mediaLayout, #liveLayout').removeClass("col-md-9");
-            $('#musicLayout, #mediaLayout, #liveLayout').addClass("col-md-11");
+            $('.layout').removeClass("col-md-9");
+            $('.layout').addClass("col-md-11");
           });
         });
 
