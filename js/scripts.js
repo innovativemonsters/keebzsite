@@ -6,7 +6,7 @@ $(document).ready(function(){
 
   $('#MainLogo').click(function() {
     $('#facebook').hide();
-    $('#musicLayout, #mediaLayout, #liveLayout').fadeOut(function(){
+    $('.layout').fadeOut(function(){
       $(this).css("bottom","-1000px");
       $('#facebookTab').css('background','rgba(255, 255, 255, .5)');
     });

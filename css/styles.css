@@ -25,15 +25,15 @@ h5 {
   color: black;
 }
 
-.blue {
+.color1 {
   background: rgba(0, 154, 205, .7);
 }
 
-.gray {
+.color2 {
   background: rgba(51, 51, 51, .7);
 }
 
-.pink {
+.color3 {
   background: rgba(207, 6, 107, .7);
 }
 
@@ -114,19 +114,12 @@ h5 {
 .layout {
   display: inline-block;
   width: 94%;
-/*  margin-left: 17em;*/
-/*  -webkit-transition: all 0.2s ease;*/
-/*    -moz-transition: all 0.2s ease;*/
-/*    -o-transition: all 0.2s ease;*/
-    padding-left: 10px;
-    bottom: -1000px;
-    transition: width 0.1s ease;
+  padding-left: 10px;
+  bottom: -1000px;
+  transition: width 0.1s ease;
 }
 
 .scrol {
-
-/*  border-top-left-radius: 2%;
-  border-bottom-left-radius: 2%;*/
   padding: 10px;
 }
 
