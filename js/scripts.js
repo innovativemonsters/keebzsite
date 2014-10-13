@@ -7,7 +7,7 @@ $(document).ready(function(){
   $('#MainLogo').click(function() {
     $('#facebook').hide();
     $('#musicLayout, #mediaLayout, #liveLayout').fadeOut(function(){
-      $(this).css("bottom","-1000px").removeClass("col-md-11").addClass("col-md-9");
+      $(this).css("bottom","-1000px");
       $('#facebookTab').css('background','rgba(255, 255, 255, .5)');
     });
   });
@@ -19,7 +19,7 @@ $(document).ready(function(){
         $('#MainLogo').css({"margin-left":"-200px","width":"200px"}).show();
         $('.glyphicon').css({"left":"-300px"});
         $('#miniBar').css({"width":"0em", "left":"-50px"});
-        
+
         $('#miniBar').show( function(){
           $(this).animate({"width": "16em", "left":"0px"}, 500);
           $('.glyphicon').animate({"left":"0px"},500);
@@ -30,19 +30,17 @@ $(document).ready(function(){
 //sidebar Function
     $("#miniBar")
       .mouseenter(function() {
-        $('.layout').removeClass("col-md-11");
-        $('.layout').addClass("col-md-9");
+        $('.layout').css("width","90%");
         $(this).animate({"width": "16em"}, 100, function(){
             $('#keebzIcon').hide();
             $('#MainLogo').show();
           });
         })
       .mouseleave(function() {
+        $(this).animate({"width": "5em"}, 100, function(){
         $('#MainLogo').hide();
         $('#keebzIcon').show();
-        $(this).animate({"width": "5em"}, 100, function(){
-            $('.layout').removeClass("col-md-9");
-            $('.layout').addClass("col-md-11");
+        $('.layout').css("width","94%");
           });
         });
 

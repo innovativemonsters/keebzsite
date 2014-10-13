@@ -1,21 +1,12 @@
 body {
   position:relative;
-/*  background-position: absolute;*/
-  /*background-image: url("../img/livephoto.jpg");
+  background-position: absolute;
+  background-image: url("../img/livephoto.jpg");
   background-repeat: no-repeat;
   background-size:100% auto;
-  background-attachment: fixed;*/
+  background-attachment: fixed;
   background-position: 0% 50%;
   background-color: gray;
-}
-
-#bg {
-  position: fixed;
-  top: -50px; 
-  left: 0;
-  /* Preserve aspet ratio */
-  min-width: 100%;
-  min-height: 100%;
 }
 
 ul
@@ -28,24 +19,24 @@ h1 {
   font-weight: bold;
   margin-top: -10px;
   text-align: center;
-/*  text-shadow:
-       2px 2px 0 #000,
-     -1px -1px 0 #000,
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-       1px 1px 0 #000;*/
 }
 
 h5 {
   color: black;
 }
 
-.row-no-padding {
-  [class*="col-"] {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
+.blue {
+  background: rgba(0, 154, 205, .7);
 }
+
+.gray {
+  background: rgba(51, 51, 51, .7);
+}
+
+.pink {
+  background: rgba(207, 6, 107, .7);
+}
+
 
 #MainLogo {
   left: -200px;
@@ -121,30 +112,21 @@ h5 {
 }
 
 .layout {
+  display: inline-block;
+  width: 94%;
+/*  margin-left: 17em;*/
 /*  -webkit-transition: all 0.2s ease;*/
 /*    -moz-transition: all 0.2s ease;*/
 /*    -o-transition: all 0.2s ease;*/
-    padding-left: 4%;
+    padding-left: 10px;
     bottom: -1000px;
     transition: width 0.1s ease;
 }
 
-.scrol1 {
-  background: rgba(0, 154, 205, .7);
+.scrol {
+
 /*  border-top-left-radius: 2%;
   border-bottom-left-radius: 2%;*/
-  padding: 10px;
-}
-
-.scrol2 {
-  background: rgba(51, 51, 51, .7);
-  padding: 10px;
-}
-
-.scrol3 {
-  background: rgba(207, 6, 107, .7);
-/*  border-top-right-radius: 2%;
-  border-bottom-right-radius: 2%;*/
   padding: 10px;
 }
 
@@ -231,21 +213,13 @@ h5 {
 
 #loading {
   display: none;
-/*  position: absolute;
+  position:absolute;
   top: 50%;
   left: 50%;
-  margin-top: -50px;
-  margin-left: -150px;
-  padding-top: 10%;*/
-/*  height:auto;
-  width:500px;*/
-position:absolute;
-top: 50%;
-left: 50%;
-margin-left: -200px;
-margin-top: 150px;
-width:400px;
-height:auto;
-opacity: 0.8;
+  margin-left: -200px;
+  margin-top: 150px;
+  width:400px;
+  height:auto;
+  opacity: 0.8;
 }
 
